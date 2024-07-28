@@ -1,0 +1,151 @@
+:root{
+  --clr-primary-300: hsl(193, 38%, 86%);
+  --clr-primary-400: hsl(150, 100%, 66%);
+
+  --clr-neutral-300: hsl(217, 19%, 38%);
+  --clr-neutral-400: hsl(217, 19%, 24%);
+  --clr-neutral-500: hsl(218, 23%, 16%);
+
+  --fs-400: 0.6875rem;
+  --fs-600: 1.5rem;
+  --ff-main: "Manrope", sans-serif;
+  --fw-800: 800;
+}
+
+
+@media (min-width: 30em){
+  :root{
+    --fs-400: 0.8125rem;
+    --fs-600: 1.75rem;
+
+  }
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* utility classes */
+
+.flow-content > * + *{
+  margin-top: var(--spacer, 1em);
+}
+
+/* general styling */
+
+body{
+  font-family: var(--ff-main);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-800);
+  background-color: var(--clr-neutral-500);
+  color: var(--clr-primary-400);
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.container{
+  max-width: 28.125rem;
+  margin: 7.5rem auto;
+  background-color: var(--clr-neutral-400);
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+
+.advice_number{
+  font-size: var(--fs-400);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.advice_text{
+  color: var(--clr-primary-300);
+}
+
+
+.advice_text::before{
+  content: "\201C";
+}
+
+.advice_text::after{
+  content: "\201D";
+}
+
+.desktop_divider{
+  display: none;
+}
+
+.mobile_divider{
+  display: block;
+  width: 100%;
+}
+
+.dice {
+  --spacer: 0.9em;
+  position: absolute;
+  display: block;
+  background-color: var(--clr-primary-400);
+  padding: 1rem;
+  width:2em;
+  border-radius: 50%;
+  cursor: pointer;
+  left:50%;
+  transform: translateX(-50%); 
+  transition: box-shadow 0.2s ease;
+}
+
+.dice:hover, 
+.dice:focus {
+  -webkit-box-shadow: 0.5px 0 24px 10px rgba(84, 255, 170, 0.34);
+  -moz-box-shadow: 0.5px 0 24px 10px rgba(84, 255, 170, 0.34);
+  box-shadow: 0.5px 0 24px 10px rgba(84, 255, 170, 0.34);
+  
+}
+
+@media (min-width: 30em) {
+  
+  body{
+    padding: 0.1rem;
+  }
+
+  .container{
+    margin:13.75rem auto;
+    padding: 3rem;
+    margin-bottom: 10rem;
+  }
+
+  .desktop_divider{
+    display: block;
+  }
+  
+  .mobile_divider{
+    display: none;
+  }
+}
+
+
+.attribution { font-size: 11px; text-align: center; color:var(--clr-primary-300); }
+.attribution a { color: var(--clr-primary-400) }
+
