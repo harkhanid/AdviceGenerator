@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/harkhanid/AdviceGenerator/)
-- Live Site URL: [ive site](https://harkhanid.github.io/AdviceGenerator/)
+- Live Site URL: [Live site](https://harkhanid.github.io/AdviceGenerator/)
 
 ## My process
 
