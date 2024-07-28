@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Advice generator app</title>
   
@@ -14,15 +15,15 @@
 </head>
 <body>
   <div class="container flow-content">
-    <p class="advice_number">Advice #<span> 57</span></p>
-    <p class="advice_text">It is easy to sit up and take notice, what's difficult is getting up and taking action.</p>
+    <p class="advice_number">Advice #<span id="advice_number"></span></p>
+    <p class="advice_text" id="advice_text"></p>
     <div >
       <img class="desktop_divider" src="images/pattern-divider-desktop.svg">
       <img class="mobile_divider" src="images/pattern-divider-mobile.svg">
     </div>
-    <a class="dice">
-      <img  src="images/icon-dice.svg" />
-    </a>
+    <div class="dice" id="button">
+      <img  src="images/icon-dice.svg" onclick="call_api()" />
+    </div>
   </div>
   
   <div class="attribution">
