@@ -14,22 +14,26 @@
   <link rel="stylesheet" href="main.css" >
 </head>
 <body>
+  <main>
   <div class="container flow-content">
     <p class="advice_number">Advice #<span id="advice_number"></span></p>
     <p class="advice_text" id="advice_text"></p>
     <div >
-      <img class="desktop_divider" src="images/pattern-divider-desktop.svg">
-      <img class="mobile_divider" src="images/pattern-divider-mobile.svg">
+      <img class="desktop_divider" alt="desktop-divider" src="images/pattern-divider-desktop.svg">
+      <img class="mobile_divider" alt="mobile-divider" src="images/pattern-divider-mobile.svg">
     </div>
-    <div class="dice" id="button">
+    <button class="dice" id="button">
       <img  src="images/icon-dice.svg" onclick="call_api()" />
-    </div>
+    </button>
   </div>
+</main>
   
+<footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/harkhanid" target="_blank">Dharmik Harkhani</a>.
   </div>
+</footer>
 </body>
 <script src="index.js">
 </script>

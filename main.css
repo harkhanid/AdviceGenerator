@@ -41,7 +41,7 @@ figure {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -65,12 +65,13 @@ body{
 }
 
 .container{
-  max-width: 28.125rem;
+  max-width: 30rem;
   margin: 7.5rem auto;
   background-color: var(--clr-neutral-400);
   padding: 1.5rem;
   padding-bottom: 2.5rem;
   position: relative;
+  border-radius: 15px;
 }
 
 .advice_number{
@@ -103,12 +104,14 @@ body{
 }
 
 .dice {
-  --spacer: 0.9em;
+  --spacer: 2rem;
   position: absolute;
   display: block;
+  border:none;
+  padding: 0.75rem;
   background-color: var(--clr-primary-400);
-  padding: 1rem;
-  width:2em;
+  width:3rem;
+  height:3rem;
   border-radius: 50%;
   cursor: pointer;
   left:50%;
@@ -116,8 +119,7 @@ body{
   transition: box-shadow 0.2s ease;
 }
 
-.dice:hover, 
-.dice:focus {
+.dice:hover {
   -webkit-box-shadow: 0.5px 0 24px 10px rgba(84, 255, 170, 0.34);
   -moz-box-shadow: 0.5px 0 24px 10px rgba(84, 255, 170, 0.34);
   box-shadow: 0.5px 0 24px 10px rgba(84, 255, 170, 0.34);
