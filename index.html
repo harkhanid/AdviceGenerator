@@ -16,14 +16,14 @@
 <body>
   <main>
   <div class="container flow-content">
-    <p class="advice_number">Advice #<span id="advice_number"></span></p>
+    <h1 class="advice_number">Advice #<span id="advice_number"></span></h1>
     <p class="advice_text" id="advice_text"></p>
     <div >
       <img class="desktop_divider" alt="desktop-divider" src="images/pattern-divider-desktop.svg">
       <img class="mobile_divider" alt="mobile-divider" src="images/pattern-divider-mobile.svg">
     </div>
-    <button class="dice" id="button">
-      <img  src="images/icon-dice.svg" onclick="call_api()" />
+    <button class="dice" id="button" aria-label="Refresh Button" >
+      <img  src="images/icon-dice.svg" onclick="call_api()" alt="dice icon" />
     </button>
   </div>
 </main>
