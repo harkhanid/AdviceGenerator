@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/harkhanid/AdviceGenerator/)
-- Live Site URL: [Add live site URL here](https://harkhanid.github.io/AdviceGenerator/)
+- Solution URL: [Solution](https://github.com/harkhanid/AdviceGenerator/)
+- Live Site URL: [Live site](https://harkhanid.github.io/AdviceGenerator/)
 
 ## My process
 
